@@ -2,7 +2,7 @@
   "name": "bestdish-bangalore",
   "version": "1.0.0",
   "scripts": {
-    "build": "cd client && npm install --legacy-peer-deps && npm run build && cd ../server && npm install",
+    "build": "cd client && npm install --legacy-peer-deps && npm run build",
     "start": "node server/index.js",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "cd server && node index.js",
@@ -10,5 +10,11 @@
   },
   "devDependencies": {
     "concurrently": "^8.0.0"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.6.2",
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.4",
+    "express": "^5.2.1"
   }
 }
